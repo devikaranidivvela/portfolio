@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e3d10e0f73.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                
+                <h1><span>D</span>evika.</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                
+                <h1>Hi, I'm <span>Devikarani</span> </h1>
+            </div>
+        </div>
+
+    </div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="background.jpg">
+            </div>
+            <div class="about-col-2">
+                
+                <h1 class="sub-title">About Me</h1>
+                
+                <p>I'm Divvela Devikarani, a B.Tech student in Artificial Intelligence and Data Science
+                   at S.R.K.R Engineering College. With skills in Python, C++, HTML, CSS, and AWS,
+                   I've developed projects like an SMS Classifier with 98% accuracy. 
+                   My internships at BlackBucks Engineers and Bharat Intern have given me hands-on experience
+                   in cloud services and machine learning.
+                   I am passionate about leveraging technology to solve real-world problems. 
+                   Feel free to reach out for collaborations and opportunities!</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"onclick="opentab('internships')">Internships</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Data Science</span><br> Analyze and Interpret complex data</li>
+                        <li><span>Machine Learning</span><br> Automates data analysis to predict outcomes and trends</li>
+                        <li><span>Python,C++</span><br>Solving problems in Data Structures & Algorithms </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="internships">
+                    <ul>
+                        <li><span>AWS Cloud Intern	July 2023-Sep 2023</span><br>BlackBucks Engineers PVT.LTD</li>
+                        <li><span>Data Science Intern	Oct 2023 -Nov 2023</span><br>Bharat Intern </li>
+                        <li><span> AI&ML&DS Intern  June 2024-present</span><br>BlackBucks Engineers PVT.LTD </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Bachelor Of Technology(AI&DS)  2021-2025</span><br> SRKR Engineering College</li>
+                        <li><span>Intermediate 2019-2021</span><br> Oxford Junior College</li>
+                        <li><span>SSC 2018-2019</span><br>Andhra High School </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+</div>
+<!--projects-->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="project-list">
+            <div>
+                <i class="fa-brands fa-spotify"></i>
+                <h2>Spotify Likeness Classification Analysis</h2>
+                <p>Classified Spotify likes using 
+                    Logistic Regression, SVM; 
+                    improved recommendation accuracy.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-comment-sms"></i>
+                <h2>SMS Classifier</h2>
+                <p>Automated SMS spam detection using SVM with 98% accuracy</p>
+            </div>
+            <div>
+                <i class="fa-brands fa-aws"></i>
+                <h2>6 VPC's Peering Connection Using Multi-Accounts - 5.2 Tier Architecture </h2>
+                <p>Configured 6 VPC peering with EC2, Lambda, IAM, CloudShell, VPC.</p>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Expense Tracker </h2>
+                <p>Created expense tracker app using MERN stack for budget management.</p>
+            </div>
+            
+            
+        </div>
+    </div>
+</div>
+<!--contacts-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>devikaranidivvela@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>630xxxxxxx</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/divvela64/" target="_blank" ><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://github.com/devikaranidivvela" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/devikaranidivvela" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="devika resume.docx" download class="btn btn2">Download Resume</a>            </div>
+            <div class="contact-right">
+                  <form>
+                    <input type="text" name="Name" placeholder="enter the name"required>
+                    <input type="email" name="Email" placeholder="Your email"required>
+                    <textarea name="Message" rows=6 placeholder="your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                  </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright&copy;Devika<i class="fa-solid fa-heart-pulse"></i></p>
+    </div>
+</div>
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+
+        function openmenu()
+        {
+            sidemenu.style.right="0";
+            
+        }
+        function closemenu()
+        {
+            sidemenu.style.right="-200px";
+            
+        }
+    </script>
+</body>
+</html>
